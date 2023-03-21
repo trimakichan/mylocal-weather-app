@@ -1,0 +1,7 @@
+<form>
+    <h3>City name or Postal code</h3>
+    <label for="">search</label>
+    <input type="text" placeholder="City or Zip" [formControl]="search">
+    <p>Specify country code like 'Redmond,US'</p>
+    <p class="alertStyle" *ngIf = "search.invalid">Type Three or more characters to search</p>
+</form>
